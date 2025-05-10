@@ -5,6 +5,59 @@ Welcome to the Getting Started guide!
 
 In this section, you'll learn how to install the project, get it up and running, and answer some frequently asked questions.
 
+<Explain why it is important to use conda for using the game engine.>
+
+Installing conda 
+-----------------
+To install conda, follow the instructions on the official website: https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
+Make sure to install the latest version of conda.
+
+Creating a conda environment
+----------------------------
+To create a conda environment for the project, use the following command:
+
+::
+
+   conda create --name aetherion-312 python=3.12
+
+::
+
+   conda activate aetherion-312
+
+Installing system dependencies and libraries
+--------------------------------------------
+To install the required dependencies available on conda, use the following commands:
+
+::
+   
+   conda install -c conda-forge libstdcxx-ng libgcc-ng gxx_linux-64
+
+   conda install -c conda-forge sdl2 sdl2_image sdl2_ttf sdl2_mixer pysdl2
+   conda install -c conda-forge nanobind
+   conda install -c conda-forge numpy
+   conda install -c conda-forge spdlog
+
+
+How to install openvdb?
+-----------------------
+
+As innitial version this might be an obligation! Hoping to have some help on making it easier soon.
+
+https://github.com/AcademySoftwareFoundation/openvdb?tab=readme-ov-file#linuxmacos
+
+
+
+Installing the game engine python package
+-----------------------------------------
+
+<Explain why it is important to use the --index-url option.>
+To install the game engine python package, use the following command:
+
+::
+
+   pip install --index-url https://arthurmoreno.github.io/aetherion-docs/wheel-html-index/ aetherion
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents

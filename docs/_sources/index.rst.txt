@@ -28,6 +28,12 @@ Contents
 
 .. toctree::
    :maxdepth: 2
+   :caption: Home
+
+   index
+
+.. toctree::
+   :maxdepth: 2
    :caption: Documentation
 
    topics/installation/index
