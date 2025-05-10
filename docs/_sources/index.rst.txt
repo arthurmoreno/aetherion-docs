@@ -30,8 +30,8 @@ Contents
    :maxdepth: 2
    :caption: Documentation
 
-   installation
-   getting_started
+   topics/installation
+   topics/getting_started
    physics_simulation
    world_simulation
    ecs_architecture
