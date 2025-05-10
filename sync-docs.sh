@@ -37,12 +37,13 @@ touch docs/.nojekyll
 echo "📖  Copying Sphinx output from ${DOCS_SOURCE} → docs/"
 cp -a "${DOCS_SOURCE}/." docs/
 
+
 # # ——————————————————————————————————————————————————————————————
 # # 3. Copy release/ into docs/${WHEEL_HTML_INDEX_COMPATIBLE}/
 # # ——————————————————————————————————————————————————————————————
-# TARGET="docs/${WHEEL_HTML_INDEX_COMPATIBLE}"
-# echo "📦  Copying release/ → ${TARGET}/"
-# mkdir -p "${TARGET}"
-# cp -a release/. "${TARGET}/"
+TARGET="docs"
 
-# echo "✅  Done! Your docs/ folder is now up-to-date."
+echo "📦  Copying wheel-html-index docs/ → ${TARGET}/"
+cp -a ./wheel-html-index "${TARGET}/"
+
+echo "✅  Done! Your docs/ folder is now up-to-date."
